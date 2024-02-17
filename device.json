@@ -1,0 +1,959 @@
+[
+    {
+        "identity": {
+            "firmware_version": "1.0.0.0",
+            "is_transmitter": true,
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux",
+            "is_receiver": true
+        },
+        "configuration": [],
+        "streams": [
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "HDMI_AUDIO",
+                "configuration": []
+            }
+        ],
+        "subscriptions": [
+            {
+                "configuration": {
+                    "address": "225.0.0.2",
+                    "rotate": 0,
+                    "source_height": 2160,
+                    "source_width": 3840,
+                    "fill": 1
+                },
+                "type": "HDMI",
+                "index": 0,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "0a8c452d8e2d"
+            }
+        ],
+        "nodes": [
+            {
+                "status": {
+                    "ip": {
+                        "address": "192.168.199.103"
+                    },
+                    "mac_address": "968adb3dd30c"
+                },
+                "index": 0,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "BITMAP_OVERLAY",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "fps": 0,
+                    "height": 0,
+                    "width": 0,
+                    "audio_ch": 0,
+                    "audio_present": 0,
+                    "audio_rate": 0,
+                    "connected": "disconnected"
+                },
+                "index": 0,
+                "type": "HDMI_DECODER",
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                }
+            },
+            {
+                "status": {
+                    "connected": "connected",
+                    "edid": "00ffffffffffff00371801000100000004190103807341780acf74a3574cb02309484c2108008180454061409500010101010101010108e80030f2705a80b0588a00501d7400001e023a801871382d40582c4500501d7400001e000000fc004d58582d552d312d480a202020000000fd00184b0f873c000a20202020202001a4020357f25861606566c6c7c2c3c47576010304050710121314161f2022320f7f073d1e501507505f7e01570600677e00835f0000e305c0006e030c001000383c20808001020304e30fff0767d85dc401788061e30605018c0ad08a20e02d10103e9600c48e210000188c0ad090204031200c405500c48e210000180000000076"
+                },
+                "index": 0,
+                "type": "HDMI_MONITOR",
+                "configuration": []
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "FRAME_BUFFER",
+                "configuration": {
+                    "grid_index_horiz": 2,
+                    "grid_index_vert": 1,
+                    "fps": 60,
+                    "height": 2160,
+                    "width": 3840,
+                    "bezel_horiz": 10,
+                    "bezel_vert": 10,
+                    "display_mode": "GENLOCKED",
+                    "grid_width": 2,
+                    "grid_height": 2
+                }
+            }
+        ],
+        "status": {
+            "active": true
+        },
+        "device_id": "968adb3dd30c"
+    },
+    {
+        "nodes": [
+            {
+                "status": {
+                    "mac_address": "1eb120e572d5",
+                    "ip": {
+                        "address": "192.168.199.101"
+                    }
+                },
+                "index": 0,
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "type": "NETWORK_INTERFACE"
+            },
+            {
+                "status": [],
+                "index": 1,
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "type": "NETWORK_INTERFACE"
+            },
+            {
+                "status": [],
+                "index": 0,
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "type": "UART"
+            },
+            {
+                "status": [],
+                "index": 1,
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "type": "UART"
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "configuration": [],
+                "type": "BITMAP_OVERLAY"
+            },
+            {
+                "status": {
+                    "fps": 0,
+                    "height": 0,
+                    "width": 0,
+                    "audio_ch": 0,
+                    "audio_present": 0,
+                    "audio_rate": 0,
+                    "connected": "disconnected"
+                },
+                "index": 0,
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                },
+                "type": "HDMI_DECODER"
+            },
+            {
+                "status": {
+                    "connected": "connected",
+                    "edid": "00ffffffffffff00371801000100000004190103807341780acf74a3574cb02309484c2108008180454061409500010101010101010108e80030f2705a80b0588a00501d7400001e023a801871382d40582c4500501d7400001e000000fc004d58582d552d312d480a202020000000fd00184b0f873c000a20202020202001a4020357f25861606566c6c7c2c3c47576010304050710121314161f2022320f7f073d1e501507505f7e01570600677e00835f0000e305c0006e030c001000383c20808001020304e30fff0767d85dc401788061e30605018c0ad08a20e02d10103e9600c48e210000188c0ad090204031200c405500c48e210000180000000076"
+                },
+                "index": 0,
+                "configuration": [],
+                "type": "HDMI_MONITOR"
+            },
+            {
+                "status": [],
+                "index": 0,
+                "configuration": {
+                    "grid_index_horiz": 1,
+                    "grid_index_vert": 2,
+                    "fps": 60,
+                    "height": 2160,
+                    "grid_width": 2,
+                    "bezel_horiz": 10,
+                    "bezel_vert": 10,
+                    "display_mode": "GENLOCKED",
+                    "width": 3840,
+                    "grid_height": 2
+                },
+                "type": "FRAME_BUFFER"
+            }
+        ],
+        "configuration": [],
+        "streams": [
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "configuration": [],
+                "type": "HDMI_AUDIO"
+            }
+        ],
+        "subscriptions": [
+            {
+                "type": "HDMI",
+                "configuration": {
+                    "address": "225.0.0.2",
+                    "rotate": 0,
+                    "source_height": 1080,
+                    "source_width": 1920,
+                    "fill": 1
+                },
+                "index": 0,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "0a8c452d8e2d"
+            }
+        ],
+        "identity": {
+            "is_transmitter": true,
+            "firmware_version": "1.0.0.0",
+            "is_receiver": true,
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux"
+        },
+        "status": {
+            "active": true
+        },
+        "device_id": "1eb120e572d5"
+    },
+    {
+        "subscriptions": [
+            {
+                "configuration": {
+                    "address": "225.0.0.2",
+                    "rotate": 0,
+                    "source_height": 2160,
+                    "source_width": 3840,
+                    "fill": 1
+                },
+                "type": "HDMI",
+                "index": 0,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "0a8c452d8e2d"
+            }
+        ],
+        "configuration": [],
+        "streams": [
+            {
+                "type": "HDMI",
+                "index": 0,
+                "configuration": {
+                    "address": "225.0.0.1"
+                },
+                "status": {
+                    "state": "STREAMING"
+                }
+            },
+            {
+                "type": "HDMI_AUDIO",
+                "index": 0,
+                "configuration": [],
+                "status": {
+                    "state": "STOPPED"
+                }
+            },
+            {
+                "type": "HDMI",
+                "index": 1,
+                "configuration": {
+                    "address": "225.0.0.1"
+                },
+                "status": {
+                    "state": "STOPPED"
+                }
+            },
+            {
+                "type": "HDMI",
+                "index": 2,
+                "configuration": {
+                    "address": "225.0.0.1"
+                },
+                "status": {
+                    "state": "STOPPED"
+                }
+            },
+            {
+                "type": "HDMI",
+                "index": 3,
+                "configuration": {
+                    "address": "225.0.0.1"
+                },
+                "status": {
+                    "state": "STOPPED"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "type": "NETWORK_INTERFACE",
+                "index": 0,
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "status": {
+                    "mac_address": "222c76399de8",
+                    "ip": {
+                        "address": "192.168.199.102"
+                    }
+                }
+            },
+            {
+                "type": "NETWORK_INTERFACE",
+                "index": 1,
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "status": []
+            },
+            {
+                "type": "UART",
+                "index": 0,
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "status": []
+            },
+            {
+                "type": "UART",
+                "index": 1,
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "status": []
+            },
+            {
+                "type": "BITMAP_OVERLAY",
+                "index": 0,
+                "configuration": [],
+                "status": {
+                    "state": "STOPPED"
+                }
+            },
+            {
+                "type": "HDMI_DECODER",
+                "index": 0,
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                },
+                "status": {
+                    "fps": 0,
+                    "height": 0,
+                    "width": 0,
+                    "audio_ch": 0,
+                    "audio_present": 0,
+                    "audio_rate": 0,
+                    "connected": "disconnected"
+                }
+            },
+            {
+                "type": "HDMI_MONITOR",
+                "index": 0,
+                "configuration": [],
+                "status": {
+                    "connected": "connected",
+                    "edid": "00ffffffffffff00371801000100000004190103807341780acf74a3574cb02309484c2108008180454061409500010101010101010108e80030f2705a80b0588a00501d7400001e023a801871382d40582c4500501d7400001e000000fc004d58582d552d312d480a202020000000fd00184b0f873c000a20202020202001a4020357f25861606566c6c7c2c3c47576010304050710121314161f2022320f7f073d1e501507505f7e01570600677e00835f0000e305c0006e030c001000383c20808001020304e30fff0767d85dc401788061e30605018c0ad08a20e02d10103e9600c48e210000188c0ad090204031200c405500c48e210000180000000076"
+                }
+            },
+            {
+                "type": "SCALER",
+                "index": 0,
+                "configuration": [],
+                "status": []
+            },
+            {
+                "type": "FRAME_BUFFER",
+                "index": 0,
+                "configuration": {
+                    "grid_index_horiz": 1,
+                    "grid_index_vert": 1,
+                    "fps": 60,
+                    "height": 2160,
+                    "grid_width": 2,
+                    "bezel_horiz": 10,
+                    "bezel_vert": 10,
+                    "display_mode": "GENLOCKED",
+                    "width": 3840,
+                    "grid_height": 2
+                },
+                "status": []
+            }
+        ],
+        "identity": {
+            "is_receiver": true,
+            "firmware_version": "1.0.0.0",
+            "is_transmitter": true,
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux"
+        },
+        "status": {
+            "active": true
+        },
+        "device_id": "222c76399de8"
+    },
+    {
+        "identity": {
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux",
+            "is_transmitter": true,
+            "firmware_version": "1.0.0.0",
+            "is_receiver": true
+        },
+        "configuration": [],
+        "streams": [
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "HDMI_AUDIO",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "state": "STREAMING"
+                },
+                "index": 0,
+                "type": "HDMI",
+                "configuration": {
+                    "address": "225.0.0.1"
+                }
+            }
+        ],
+        "subscriptions": [],
+        "nodes": [
+            {
+                "status": {
+                    "ip": {
+                        "address": "192.168.199.108"
+                    },
+                    "mac_address": "92a0b9895a1c"
+                },
+                "index": 0,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "BITMAP_OVERLAY",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "fps": 60000,
+                    "height": 2160,
+                    "width": 3840,
+                    "audio_ch": 2,
+                    "audio_present": 1,
+                    "audio_rate": 48000,
+                    "connected": "connected"
+                },
+                "index": 0,
+                "type": "HDMI_DECODER",
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                }
+            },
+            {
+                "status": {
+                    "edid": "",
+                    "connected": "disconnected"
+                },
+                "index": 0,
+                "type": "HDMI_MONITOR",
+                "configuration": []
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "SCALER",
+                "configuration": []
+            }
+        ],
+        "status": {
+            "active": true
+        },
+        "device_id": "92a0b9895a1c"
+    },
+    {
+        "identity": {
+            "is_transmitter": true,
+            "firmware_version": "1.0.0.0",
+            "is_receiver": true,
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux"
+        },
+        "configuration": [],
+        "streams": [
+            {
+                "configuration": [],
+                "index": 0,
+                "type": "HDMI_AUDIO",
+                "status": {
+                    "state": "STOPPED"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "index": 0,
+                "type": "NETWORK_INTERFACE",
+                "status": {
+                    "mac_address": "8212a68b5648",
+                    "ip": {
+                        "address": "192.168.199.107"
+                    }
+                }
+            },
+            {
+                "configuration": {
+                    "setting": "dhcp",
+                    "hostname": "rk3588-buildroot",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                },
+                "index": 1,
+                "type": "NETWORK_INTERFACE",
+                "status": []
+            },
+            {
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "index": 0,
+                "type": "UART",
+                "status": []
+            },
+            {
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                },
+                "index": 1,
+                "type": "UART",
+                "status": []
+            },
+            {
+                "configuration": [],
+                "index": 0,
+                "type": "BITMAP_OVERLAY",
+                "status": {
+                    "state": "STOPPED"
+                }
+            },
+            {
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                },
+                "index": 0,
+                "type": "HDMI_DECODER",
+                "status": {
+                    "fps": 0,
+                    "height": 0,
+                    "width": 0,
+                    "audio_ch": 0,
+                    "audio_present": 0,
+                    "audio_rate": 0,
+                    "connected": "disconnected"
+                }
+            },
+            {
+                "configuration": [],
+                "index": 0,
+                "type": "HDMI_MONITOR",
+                "status": {
+                    "edid": "00ffffffffffff00371801000100000004190103807341780acf74a3574cb02309484c2108008180454061409500010101010101010108e80030f2705a80b0588a00501d7400001e023a801871382d40582c4500501d7400001e000000fc004d58582d552d312d480a202020000000fd00184b0f873c000a20202020202001a4020357f25861606566c6c7c2c3c47576010304050710121314161f2022320f7f073d1e501507505f7e01570600677e00835f0000e305c0006e030c001000383c20808001020304e30fff0767d85dc401788061e30605018c0ad08a20e02d10103e9600c48e210000188c0ad090204031200c405500c48e210000180000000076",
+                    "connected": "connected"
+                }
+            }
+        ],
+        "subscriptions": [],
+        "status": {
+            "active": true
+        },
+        "device_id": "8212a68b5648"
+    },
+    {
+        "identity": {
+            "is_transmitter": true,
+            "firmware_version": "1.0.0.0",
+            "kernel_version": "Linux rk3588-buildroot 5.10.160 #1 SMP Tue Dec 26 08:38:27 CST 2023 aarch64 GNU/Linux",
+            "is_receiver": true
+        },
+        "subscriptions": [
+            {
+                "configuration": {
+                    "fill": 1,
+                    "rect": {
+                        "x": 0,
+                        "height": 1080,
+                        "width": 1920,
+                        "y": 0
+                    },
+                    "source_height": 2160,
+                    "address": "225.0.0.1",
+                    "source_width": 3840,
+                    "rotate": 0
+                },
+                "type": "HDMI",
+                "index": 0,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "92a0b9895a1c"
+            },
+            {      
+                "configuration": {
+                    "fill": 1,
+                    "rect": {
+                        "x": 1920,
+                        "height": 1080,
+                        "width": 1920,
+                        "y": 0
+                    },
+                    "source_height": 2160,
+                    "address": "225.0.0.1",
+                    "source_width": 3840,
+                    "rotate": 0
+                },
+                "type": "HDMI",
+                "index": 1,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "92a0b9895a1c"
+            },
+            {
+                "configuration": {
+                    "fill": 1,
+                    "rect": {
+                        "x": 0,
+                        "height": 1080,
+                        "width": 1920,
+                        "y": 1080
+                    },
+                    "source_height": 2160,
+                    "address": "225.0.0.1",
+                    "source_width": 3840,
+                    "rotate": 0
+                },
+                "type": "HDMI",
+                "index": 2,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "92a0b9895a1c"
+            },
+            {
+                "configuration": {
+                    "fill": 1,
+                    "rect": {
+                        "x": 1920,
+                        "height": 1080,
+                        "width": 1920,
+                        "y": 1080
+                    },
+                    "source_height": 2160,
+                    "address": "225.0.0.1",
+                    "source_width": 3840,
+                    "rotate": 0
+                },
+                "type": "HDMI",
+                "index": 3,
+                "status": {
+                    "state": "STREAMING"
+                },
+                "source_device": "92a0b9895a1c"
+            }
+        ],
+        "configuration": [],
+        "streams": [
+            {
+                "status": {
+                    "state": "STREAMING"
+                },
+                "index": 0,
+                "type": "HDMI",
+                "configuration": {
+                    "address": "225.0.0.2"
+                }
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "HDMI_AUDIO",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 1,
+                "type": "HDMI",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 2,
+                "type": "HDMI",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 3,
+                "type": "HDMI",
+                "configuration": []
+            }
+        ],
+        "nodes": [
+            {
+                "status": {
+                    "ip": {
+                        "address": "192.168.199.105"
+                    },
+                    "mac_address": "0a8c452d8e2d"
+                },
+                "index": 0,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "NETWORK_INTERFACE",
+                "configuration": {
+                    "hostname": "rk3588-buildroot",
+                    "setting": "dhcp",
+                    "ip": {
+                        "mode": "dhcp"
+                    }
+                }
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": [],
+                "index": 1,
+                "type": "UART",
+                "configuration": {
+                    "stop_bits": 1,
+                    "data_bits": 8,
+                    "baud_rate": 115200,
+                    "parity": "NONE"
+                }
+            },
+            {
+                "status": {
+                    "state": "STOPPED"
+                },
+                "index": 0,
+                "type": "BITMAP_OVERLAY",
+                "configuration": []
+            },
+            {
+                "status": {
+                    "fps": 0,
+                    "height": 0,
+                    "width": 0,
+                    "audio_ch": 0,
+                    "audio_present": 0,
+                    "audio_rate": 0,
+                    "connected": "disconnected"
+                },
+                "index": 0,
+                "type": "HDMI_DECODER",
+                "configuration": {
+                    "edid": "00ffffffffffff0049708835010000002d1f0103807844780acf74a3574cb02309484c2108006140010181009500a9c0010101010101023a801871382d40582c450020c23100001e011d007251d01e206e28550020c23100001e000000fc00524b2d5548440a202020202020000000fd003b461f8c3c000a20202020202001a702032ef151071614050103121384221f905d5e5f6061230907078301000067030c0030000044e3050301e30e6061023a801871382d40582c450020c23100001e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d2"
+                }
+            },
+            {
+                "status": {
+                    "connected": "connected",
+                    "edid": "00ffffffffffff00371801000100000004190103807341780acf74a3574cb02309484c2108008180454061409500010101010101010108e80030f2705a80b0588a00501d7400001e023a801871382d40582c4500501d7400001e000000fc004d58582d552d312d480a202020000000fd00184b0f873c000a20202020202001a4020357f25861606566c6c7c2c3c47576010304050710121314161f2022320f7f073d1e501507505f7e01570600677e00835f0000e305c0006e030c001000383c20808001020304e30fff0767d85dc401788061e30605018c0ad08a20e02d10103e9600c48e210000188c0ad090204031200c405500c48e210000180000000076"
+                },
+                "index": 0,
+                "type": "HDMI_MONITOR",
+                "configuration": []
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "SCALER",
+                "configuration": []
+            },
+            {
+                "status": [],
+                "index": 0,
+                "type": "FRAME_BUFFER",
+                "configuration": {
+                    "fps": 60,
+                    "height": 2160,
+                    "width": 3840,
+                    "display_mode": "GENLOCKED"
+                }
+            }
+        ],
+        "status": {
+            "active": true
+        },
+        "device_id": "0a8c452d8e2d"
+    }
+]

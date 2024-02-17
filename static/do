@@ -1,0 +1,95 @@
+{
+  "gid": 200000,
+  "cmd": "status",
+  "code": 0,
+  "info": {
+    "name": "AC-FRESCO-4",
+    "modelname": "AC-FRESCO-4",
+    "serialnumber": "d4326g70001",
+    "hardver": "1.00",
+    "softver": "0.11",
+    "eth0": "static/192.168.1.199/255.255.255.0/192.168.1.254",
+    "dns": "8.8.8.8 8.8.4.4",
+    "rxbuf": "uart received data\nthe end.",
+    "rs232telnet": 1,
+    "rs232telnetport": "23",
+    "rs232telnetsecure": false,
+    "rs232telnetuser": "admin",
+    "websecure": false,
+    "webuser": "admin",
+    "webpassword": "admin",
+    "inputsID": [
+      {
+        "port": "IN 1",
+        "id": "Laptop 1"
+      },
+      {
+        "port": "IN 2",
+        "id": "Laptop 2"
+      },
+      {
+        "port": "IN 3",
+        "id": ""
+      },
+      {
+        "port": "IN 4",
+        "id": "Desktop 4"
+      }
+    ],
+    "outputsVideoID": [
+      {
+        "port": "OUT 1",
+        "id": "BenQ 1"
+      },
+      {
+        "port": "OUT 2",
+        "id": "Murideo 2"
+      },
+      {
+        "port": "OUT 3",
+        "id": "LG 3"
+      },
+      {
+        "port": "OUT 4",
+        "id": ""
+      }
+    ],
+    "outputsAudioID": [
+      {
+        "port": "OUT",
+        "id": "Amp 1"
+      },
+      {
+        "port": "OUT 2",
+        "id": "Amp 2"
+      },
+      {
+        "port": "OUT 3",
+        "id": ""
+      },
+      {
+        "port": "OUT 4",
+        "id": "Amp 4"
+      }
+    ],
+    "mac": "1C:4E:63:28:32:83",
+    "portalias": "",
+    "syncproEnable": true,
+    "syncproHost": "http://hub.syncpro.io/v1/devices",
+    "syncproPartnerID": "3a093528-6e77-43e1-8f4a-a96049806d95",
+    "syncproModelID": "b84b094a-0fc4-48af-b396-269f23a6e833",
+    "deviceID": "6f351a3d-3762-4084-9384-b560663b52fd",
+    "deviceAccessKey": "f8fa14e6c172ee2af5dc6e7bac26c35c",
+    "virtualnumber": "1.26.06",
+    "mcuVersion": "MAIN MCU V1.36_AUX MCU V1.02",
+    "adminsecure": false,
+    "adminusername": "admin",
+    "adminpassword": "admin",
+    "usersecure": false,
+    "userusername": "user",
+    "userpassword": "user123",
+    "privacyStatus": false,
+    "EULAStatus": false,
+    "cloudEnable": false
+  }
+}
