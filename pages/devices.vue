@@ -20,6 +20,7 @@
               dense
               counter
               maxlength="15"
+              readonly
             >
             </v-text-field>
             <v-btn

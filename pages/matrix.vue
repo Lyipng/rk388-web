@@ -127,7 +127,53 @@ export default {
   data() {
     return {
       rxInfo: [],
-      txInfo: [],
+      txInfo: [
+        {
+          deviceMac: "aaaaaaa",
+          streamAddr: "",
+          sourceMac: "",
+          sourceAddr: "",
+          streams_index: 0,
+          color: "#c9c9c9",
+          sub_index: [],
+        },
+        {
+          deviceMac: "bbbbbbbb",
+          streamAddr: "",
+          sourceMac: "",
+          sourceAddr: "",
+          streams_index: 0,
+          color: "#c9c9c9",
+          sub_index: [],
+        },
+        {
+          deviceMac: "ccccccc",
+          streamAddr: "",
+          sourceMac: "",
+          sourceAddr: "",
+          streams_index: 0,
+          color: "#c9c9c9",
+          sub_index: [],
+        },
+        {
+          deviceMac: "ddddddddd",
+          streamAddr: "",
+          sourceMac: "",
+          sourceAddr: "",
+          streams_index: 0,
+          color: "#c9c9c9",
+          sub_index: [],
+        },
+        {
+          deviceMac: "eeeeeeeeee",
+          streamAddr: "",
+          sourceMac: "",
+          sourceAddr: "",
+          streams_index: 0,
+          color: "#c9c9c9",
+          sub_index: [],
+        },
+      ],
       selectTxIndex: 0,
       addrNum: 0,
       selectTxMac: "",
@@ -168,7 +214,7 @@ export default {
           streamAddr: "",
           sourceMac: "",
           sourceAddr: "",
-          index: 0,
+          streams_index: 0,
           color: "#c9c9c9",
         });
       }
@@ -179,7 +225,7 @@ export default {
           streamAddr: "",
           sourceMac: "",
           sourceAddr: "",
-          index: 0,
+          streams_index: 0,
           color: "#c9c9c9",
         });
       }
@@ -207,7 +253,8 @@ export default {
 
         // var addr = this.txInfo[data[1]].streamAddr;
         if (this.txInfo[data[1]].streamAddr == "") {
-          this.txInfo[data[1]].streamAddr = "255.0.0." + (this.addrNum + 1);
+          this.txInfo[data[1]].streamAddr = "225.0.0." + (this.addrNum + 1);
+          this.addrNum += 1;
           this.startTx([
             this.txInfo[data[1]].deviceMac,
             this.txInfo[data[1]].streamAddr,
@@ -239,6 +286,7 @@ export default {
     },
 
     startTx(data) {
+      console.log("start data:" + data);
       axios
         .post("http://" + location.host + "/api/device/" + data[0], {
           cmd: {
@@ -326,7 +374,7 @@ export default {
               streamAddr: "",
               sourceMac: "",
               sourceAddr: "",
-              index: 0,
+              streams_index: 0,
               color: "#c9c9c9",
               sub_index: [],
             };
@@ -336,7 +384,7 @@ export default {
                   temp[k].streams[a].type == "HDMI" &&
                   temp[k].streams[a].status.state == "STREAMING"
                 ) {
-                  device.index = temp[k].streams[a].index;
+                  device.streams_index = temp[k].streams[a].index;
                   device.streamAddr = temp[k].streams[a].configuration.address;
                   if (device.streamAddr != "") {
                     var tmp = device.streamAddr.split(".");
